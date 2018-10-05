@@ -19,17 +19,17 @@ public class MainActivity extends AppCompatActivity implements OfPickerViewDeleg
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        EditText url = findViewById(R.id.edittext_url);
-        EditText phone = findViewById(R.id.edittext_phone);
-
 //        OFPickerView pickerView = new OFPickerView(this);
         pickerView = findViewById(R.id.pickerview);
-        pickerView.dataModel = OFDataModel.create(url.getText().toString(), phone.getText().toString());
         pickerView.delegate = this;
 
         findViewById(R.id.btn_scan).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                EditText url = findViewById(R.id.edittext_url);
+                EditText phone = findViewById(R.id.edittext_phone);
+                pickerView.dataModel = OFDataModel.create(url.getText().toString(), phone.getText().toString());
+
                 pickerView.startScanDevice();
             }
         });
