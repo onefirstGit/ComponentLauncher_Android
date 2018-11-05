@@ -44,8 +44,8 @@ public class MainActivity extends AppCompatActivity implements OfPickerViewDeleg
     }
 
     @Override
-    public void onScanFailed(String s) {
-        Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
+    public void onScanFailed(int errorCode, String errorMsg) {
+        Toast.makeText(this, errorMsg, Toast.LENGTH_SHORT).show();
     }
 
 
