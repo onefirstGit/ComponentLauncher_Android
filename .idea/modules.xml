@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/OFPickerViewLauncher.iml" filepath="$PROJECT_DIR$/OFPickerViewLauncher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OnefirstComponentLauncher.iml" filepath="$PROJECT_DIR$/OnefirstComponentLauncher.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
