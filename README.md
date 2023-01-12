@@ -1,5 +1,5 @@
 # ComponentLauncher_Android
-Onefirst Component Launcher - Android
+Onefirst 컴포넌트 런처 - Android
 
 사용법
 - 빌드 후 BaseUrl과 휴대폰번호 입력란을 채우고 장치검색을 누른다.
