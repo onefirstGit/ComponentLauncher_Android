@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:hint="연결할 URL"
         android:inputType="textUri"
-        android:text="http://nokeyonepass.cafe24.com:8080/noKey/" />
+        android:text="http://nokeyonels.cafe24.com:8080/phonepass/" />
 
     <EditText
         android:id="@+id/edittext_phone"
@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:hint="휴대폰번호"
         android:inputType="phone"
-        android:text="01012345678" />
+        android:text="01094366452" />
 
     <onefirst.com.onefirstcomponentlib.OFPickerView
         android:id="@+id/pickerview"
