@@ -8,8 +8,8 @@ android {
         applicationId "onefirst.com.ofpickerviewlauncher"
         minSdkVersion 23
         targetSdkVersion 33
-        versionCode 17
-        versionName "1.0.5"
+        versionCode 18
+        versionName "1.0.6"
 
         archivesBaseName = "onefirstLauncer-v${versionName}.${versionCode}"
     }
