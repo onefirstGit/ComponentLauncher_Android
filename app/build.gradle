@@ -8,9 +8,10 @@ android {
         applicationId "onefirst.com.ofpickerviewlauncher"
         minSdkVersion 23
         targetSdkVersion 33
-        versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        versionCode 17
+        versionName "1.0.5"
+
+        archivesBaseName = "onefirstLauncer-v${versionName}.${versionCode}"
     }
     buildTypes {
         release {
