@@ -9,11 +9,11 @@
 
     <EditText
         android:id="@+id/edittext_url"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:hint="연결할 URL"
         android:inputType="textUri"
-        android:text="http://nokeyonels.cafe24.com:8080/phonepass" />
+        android:text="https://ppass.co.kr/phonepass" />
 
     <EditText
         android:id="@+id/edittext_phone"
@@ -26,8 +26,7 @@
         android:id="@+id/pickerview"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginTop="40dp"
-        android:descendantFocusability="blocksDescendants" />
+        android:layout_marginTop="40dp" />
 
     <LinearLayout
         android:layout_width="wrap_content"
