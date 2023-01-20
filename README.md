@@ -6,5 +6,5 @@
 - 문열림 확인한다.
 
 ### 설정
-- AndroidManifest.xml에 명시된 권한 추가 (SDK31 추가권한 포함)
-- network_security_config.xml 추가
+~~- AndroidManifest.xml에 명시된 권한 추가 (SDK31 추가권한 포함)~~ <br>
+~~- network_security_config.xml 추가~~
