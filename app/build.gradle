@@ -8,8 +8,8 @@ android {
         applicationId "onefirst.com.ofpickerviewlauncher"
         minSdkVersion 23
         targetSdkVersion 33
-        versionCode 21
-        versionName "1.0.6"
+        versionCode 22
+        versionName "1.0.7"
 
         archivesBaseName = "onefirstLauncer-v${versionName}.${versionCode}"
     }
@@ -27,6 +27,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    namespace 'onefirst.com.ofpickerviewlauncher'
 }
 
 dependencies {
