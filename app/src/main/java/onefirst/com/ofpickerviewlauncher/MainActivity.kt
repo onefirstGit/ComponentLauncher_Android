@@ -1,11 +1,12 @@
 package onefirst.com.ofpickerviewlauncher
 
-import android.Manifest.permission.BLUETOOTH_CONNECT
-import android.Manifest.permission.BLUETOOTH_SCAN
+import android.Manifest.permission.*
 import android.bluetooth.BluetoothAdapter
 import android.content.Intent
+import android.location.LocationManager
 import android.os.Build
 import android.os.Bundle
+import android.provider.Settings
 import android.util.Log
 import android.view.View
 import android.widget.EditText
@@ -23,12 +24,28 @@ class MainActivity: AppCompatActivity(), OfPickerViewDelegate {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // *************** Permission Check Start ****************
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
             requestMultiplePermissions.launch(arrayOf(BLUETOOTH_SCAN, BLUETOOTH_CONNECT))
         }else {
+            requestMultiplePermissions.launch(arrayOf(
+                ACCESS_FINE_LOCATION,
+                ACCESS_COARSE_LOCATION
+            ))
+
             val enableBtIntent = Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE)
             requestBluetooth.launch(enableBtIntent)
         }
+        // *************** Permission Check End ****************
+
+        // GPS Check
+        val locationManager = getSystemService(LOCATION_SERVICE) as LocationManager
+        if(!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
+            startActivity(Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS))
+            Toast.makeText(this, "위치정보가 꺼져있어 설정으로 이동합니다.", Toast.LENGTH_SHORT).show()
+        }
+
+        // *************** Setup ****************
 
         // example1
 //        OFPickerView pickerView = new OFPickerView(this);
